@@ -11,11 +11,11 @@ use compiler::compile;
 async fn main() {
    let args: Vec<String> = env::args().collect();
    if args.len() < 2 {
-      println!("use this app by right-clicking any file in the explorer and selecting \"open with\", \"choose another app\", \"other apps\". Finally, scroll down to \"find another app on this pc\" and select this executable in the opened explorer window. If you don't want to repeat this entire process, double clicking the add.reg file in the file_server installation directory might help");
+      println!("use this app by right-clicking any file in the explorer and selecting \"open with\", \"choose another app\", \"other apps\". Finally, scroll down to \"find another app on this pc\" and select this executable in the opened explorer window.");
       return ();
    }
    let in_path = Path::new(&args[1]);
-   if !args[1].ends_with(".qixtex"){
+   if !args[1].ends_with(".qictex"){
       println!("please poen a .qixtex file.");
       return ();
    }
