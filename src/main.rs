@@ -5,11 +5,13 @@ pub mod lexer;
 pub mod stringtools;
 pub mod parser;
 pub mod lexer_2;
+pub mod lexer_3;
+pub mod parser_2;
 
 use std::{env, fs::File, io::{Read, Write}, path::Path, process::{Command, Stdio}};
 
-use lexer_2::tokenize;
-use parser::parse;
+use lexer_3::tokenize;
+use parser_2::parse;
 
 
 #[tokio::main]
